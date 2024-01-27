@@ -8,14 +8,17 @@ on:
 
 
 env:
+  _version : "6.1"
+  _compiler: "llvm"
+  _lto_mode: "thin"
   _waydroid: "true"
-  _processor_opt: "generic"
+  _processor_opt: "haswell"
   _git_mirror: "github.com"
   PKGDEST: "/tmp/linux-tkg"
   _debugdisable: "true"
   _noccache: "true"
   _STRIP: "true"
-  _kernel_on_diet: "true"
+  # _kernel_on_diet: "true"
   _kernel_work_folder: "/tmp"
   _kernel_source_folder: "/tmp"
   # _modprobeddb: "true"

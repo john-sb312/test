@@ -1,7 +1,7 @@
 name: Build & Release Latest Kernel
 on:
   schedule:
-    - cron: '17 */12 * * *' # “At minute 17 past every 12th hour.”
+    - cron: '0 0 * * *' # “Everyday at 0:00 UTC.”
   workflow_dispatch:
 
 jobs:
@@ -44,7 +44,9 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        _cpusched: [bore, eevdf, pds, bmq]
+        # _cpusched: [bore, eevdf, bore-eevdf]
+        _cpusched: [bore-eevdf]
+        # os: [arch, ubuntu, fedora]
         os: [arch]
     uses: ./.github/workflows/builder-dispatcher.yml
     with:
