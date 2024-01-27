@@ -44,6 +44,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        # _configfile: [config_hardened.x86_64, ]
         # _cpusched: [bore, eevdf, bore-eevdf]
         _cpusched: [bore]
         # os: [arch, ubuntu, fedora]

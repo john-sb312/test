@@ -11,6 +11,7 @@ env:
   _version : "6.1"
   _compiler: "llvm"
   _lto_mode: "full"
+  _compileroptlevel: "3"
   _waydroid: "true"
   _processor_opt: "haswell"
   _git_mirror: "github.com"
