@@ -45,7 +45,7 @@ jobs:
       fail-fast: false
       matrix:
         # _cpusched: [bore, eevdf, bore-eevdf]
-        _cpusched: [bore-eevdf]
+        _cpusched: [bore]
         # os: [arch, ubuntu, fedora]
         os: [arch]
     uses: ./.github/workflows/builder-dispatcher.yml
